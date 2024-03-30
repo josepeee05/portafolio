@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* SECCION DEL HEADER EN GENERAL */
+header .navegacion{
+    background: transparent !important;
+    /* border-bottom: 2px solid #fff; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    padding-top: 25px;
+}
+
+/* Ubicamos los items del menu a la derecha */
+nav .navbar-collapse{
+    justify-content: flex-end;
+}
+
+nav .navbar-collapse .nav-link{
+    color: #fff;
+    padding: 10px 30px;
+    margin: 0 40px;
+    transition: .5s;
+    border-bottom: 2px solid transparent;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav .navbar-collapse .nav-link:hover{
+    transform: scale(.9);
+    color: #64EDF6;
+}
+
+nav .nav-brand{
+    color: #fff;
+    font-size: 38px;
+}
+
+header{
+    width: 100%;
+    padding: 40px 0 0 0;
+    background: url('../img/fondo-header.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* header a{
+    background: linear-gradient(to right, #00FFF0, #8000FF);
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+} */
+
+#logo{
+    transition: .5s;
+}
+
+#logo:hover{
+    transform: scale(1.2);
+    rotate: 360deg;
+}
+
+#contacto {
+    width: 140px;
+    text-align: center;
+    font-weight: 500;
+    background: linear-gradient(to right, #00FFF0, #9900ff); 
+    border-radius: .9rem;
+    border-bottom: 2px solid blueviolet;
+    border-right: 2px solid blueviolet;
+    transition-duration: 1s;
+}
+ 
+#contacto:hover {
+    color: #fff;
+    border-bottom: 2px solid rgb(238, 103, 238);
+    border-right: 2px solid rgb(238, 103, 238);
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+}
+
+#hero{
+    margin-top: 120px;
+    color: #fff;
+}
+
+#hero h4{
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+#hero h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 90px;
+    margin-bottom: 30px;
+    line-height: 120px;
+}
+
+#hero span{
+    color: #00FFF0;
+}
+
+#hero a{
+    padding: 20px 15px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    /* font-size: 17px; */
+    font-weight: 500;
+    text-shadow: none;
+    background: linear-gradient(to right, #00FFF0, #8000FF); 
+    cursor: pointer;
+    box-shadow: transparent;
+    /* border: 1px solid #ffffff80; */
+    transition: 0.5s ease;
+    user-select: none;
+    width: 70%;
+    text-align: center;
+}
+
+#hero a:hover /*,:focus*/{ 
+    color: #ffffff;
+    background: #008cff;
+    /* border: 1px solid #008cff; */
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff, 0 0 100px #008cff; 
+    border-radius: 10px;
+}
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+/* SECCION SOBRE MÍ */
+
+#sobreMi{
+    width: 100%;
+    position: relative;
+    padding-top: 190px;
+    padding-bottom: 150px;
+    background: #eeeaba;
+}
+
+#sobreMi .imagen{
+    position: relative;
+    width: 400px;
+    height: 100%;
+    background: #000;
+}
+
+#sobreMi .imagen img{
+    z-index: 2;
+    position: relative;
+    width: 400px;
+}
+
+#sobreMi .imagen::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: 40px;
+    background: #000;
+    z-index: 1;
+}
+
+#sobreMi .info h2{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+}
+
+.info .objeto{
+    position: relative;
+    width: 210px;
+    height: 20px;
+    top: -25px;
+    margin-bottom: 30px;
+    background: #fffb00c4;
+}
+
+#sobreMi .info p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+
+/* SECCION DE CONOCIMIENTOS/SKILLS */
+#skills{
+    width: 100%;
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 70px;
+    background: #0F1035;
+}
+
+#skills h2{
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    margin-left: 35px;
+}
+
+#skills .linea{
+    background: #fff;
+    width: 270px;
+    height: 4px;
+    margin-bottom: 70px;
+    margin-left: 35px;
+}
+
+
+#skills .cont-card{
+    background: #365486;
+    width: 320px;
+    height: 290px;
+    padding: 30px 17px 30px 17px;
+    margin: 0 30px 85px 30px;
+    text-align: center;
+    box-shadow: 0px 0px 20px 5px #F0EDCF;
+    border-radius: 20px;
+    transition: .7s;
+}
+
+#skills .cont-card:hover{
+    transform: scale(1.1);
+    animation: rotateColors 5s infinite linear;
+}
+
+@keyframes rotateColors {
+    0% {
+        box-shadow: 0px 0px 20px 5px #F0EDCF;
+    }
+    25% {
+        box-shadow: 0px 0px 20px 5px rgba(255, 255, 0, 0.7);
+    }
+    50% {
+        box-shadow: 0px 0px 20px 5px rgba(0, 0, 255, 0.7);
+    }
+    75% {
+        box-shadow: 0px 0px 20px 5px rgba(0, 255, 0, 0.7);
+    }
+    100% {
+        box-shadow: 0px 0px 20px 5px #F0EDCF;
+    }
+}
+
+#skills .cont-card .bootstrap{
+    color: #fff;
+    font-size: 60px;
+}
+
+#skills .cont-card img{
+    width: 74px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+#skills .cont-card h4{
+    text-align: left;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+#skills .cont-card p{
+    text-align: left;
+    color: #fff;
+    font-size: 15px;
+    /* line-height: 30px; */
+}
+
+
+/* SECCION DE PROYECTOS */
+#proyectos{
+    width: 100%;
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 80px;
+    background: #000;
+}
+
+#proyectos h2{
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 45px;
+    text-align: center;
+}
+
+#proyectos .linea{
+    background: #fff;
+    width: 540px;
+    height: 1px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#proyectos .cont-img{
+    margin: 20px 30px 70px 30px;
+}
+
+#proyectos .cont-img img{
+    width: 356px;
+    height: 220px;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+#proyectos .cont-img img:hover{
+    transform: scale(1.1);
+}
+
+#proyectos .cont-img .restaurante{
+    box-shadow: 0px 0px 50px 0px #F6C59F;
+}
+
+#proyectos .cont-img .gym{
+    box-shadow: 0px 0px 50px 0px #2c5bff;
+}
+
+#proyectos .cont-img .calculadora{
+    box-shadow: 0px 0px 50px 0px #fff;
+}
+
+#proyectos .cont-img .simulador{
+    box-shadow: 0px 0px 50px 0px #40A2D8;
+}
+
+#proyectos .cont-img .rumbo{
+    box-shadow: 0px 0px 50px 0px #E8E526;
+}
+
+#proyectos .cont-img .figuras{
+    box-shadow: 0px 0px 50px 0px #E96172;
+}
+
+
+/* SECCION DE HOBBIES */
+
+#hobbies{
+    width: 100%;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 330px;
+    background: #E8F8F7;
+}
+
+#hobbies h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 55px;
+    text-align: center;
+    position: relative;
+    color: #000;
+}
+
+#hobbies h2::before{
+    content: "";
+    width: 480px;
+    height: 2.5px;
+    background: #000;
+    position: absolute;
+    top: 45%;
+    left: 0px;
+}
+
+#hobbies h2::after{
+    content: "";
+    width: 480px;
+    height: 2.5px;
+    background: #000;
+    position: absolute;
+    top: 45%;
+    right: 0px;
+}
+
+#hobbies .cont{
+    text-align: center;
+    margin-top: 250px;
+    transition: .5s;
+}
+
+#hobbies img{
+    transition: .5s;
+}
+
+#hobbies img:hover{
+    transform: scale(1.2);
+    rotate: 360deg;
+}
+
+#hobbies h4{
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+
+/* SECCION EXPERIENCIA */
+
+#experiencia{
+    width: 100%;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 290px;
+    background: #000;
+}
+
+#experiencia h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 55px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+#experiencia .cont1{
+    position: relative;
+    color: #fff;
+    background: #48B621;
+    width: 30%;
+    top: 50px;
+    left: 100px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#experiencia .cont1::after{
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    right: -45px;
+    top: 40%;
+    background: transparent;
+    border: #48B621 5px solid;
+}
+
+#experiencia .cont1::before{
+    position: absolute;
+    content: "";
+    width: 31%;
+    height: 2px;
+    right: -42%;
+    top: 51%;
+    background: #fff;
+}
+
+#experiencia .cont2{
+    position: relative;
+    color: #fff;
+    background: #BA0000;
+    width: 30%;
+    border-radius: 30px;
+    right: -450px;
+    padding: 20px;
+}
+
+#experiencia .cont2::after{
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    left: -45px;
+    top: 40%;
+    background: transparent;
+    border: #BA0000 5px solid;
+}
+
+#experiencia .cont2::before{
+    position: absolute;
+    content: "";
+    width: 36%;
+    height: 2px;
+    left: -47%;
+    top: 51%;
+    background: #fff;
+}
+
+
+#experiencia .cont3{
+    position: relative;
+    color: #fff;
+    background: #FAFF00;
+    width: 30%;
+    top: 160px;
+    left: 100px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#experiencia .cont3::after{
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    right: -45px;
+    top: 40%;
+    background: transparent;
+    border: #FAFF00 5px solid;
+}
+
+#experiencia .cont3::before{
+    position: absolute;
+    content: "";
+    width: 31%;
+    height: 2px;
+    right: -42%;
+    top: 51%;
+    background: #fff;
+}
+
+
+#experiencia .cont4{
+    position: relative;
+    color: #fff;
+    background: #145DA0;
+    width: 30%;
+    border-radius: 30px;
+    right: -450px;
+    padding: 20px;
+    top: 110px;
+}
+
+#experiencia .cont4::after{
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    left: -45px;
+    top: 40%;
+    background: transparent;
+    border: #145DA0 5px solid;
+}
+
+#experiencia .cont4::before{
+    position: absolute;
+    content: "";
+    width: 36%;
+    height: 2px;
+    left: -47%;
+    top: 51%;
+    background: #fff;
+}
+
+#experiencia .linea-figura{
+    position: absolute;
+    width: 3px;
+    height: 40.8%;
+    top: 33.6%;
+    background: #fff;
+    left: 50%;
+}
+
+
+/* SECCION CONTACTO */
+#enlaces-contacto{
+    width: 100%;
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 220px;
+    background: linear-gradient(to bottom right, #0005AC, #AA3D00);
+    text-align: center;
+}
+
+#enlaces-contacto img{
+    width: 120px;
+    transition: .5s;
+}
+
+#enlaces-contacto img:hover{
+    transform: scale(1.1);
+    rotate: 360deg;
+}
+
+#enlaces-contacto h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    margin-bottom: 170px;
+}
+
+#enlaces-contacto h4{
+    margin-top: 50px;
+    color: #fff;
+    margin-bottom: 130px;
+    font-size: 20px;
+}
+
+#enlaces-contacto .mensaje{
+    color: #fff;
+    text-decoration: none;
+    padding: 22px 55px;
+    background: linear-gradient(to right, #FF7A00, #FF0000);
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+
+/* VERSION LAPTOP PEQUEÑA */
+
+@media screen and (max-width: 1400px) {
+    
+    /* HEADER */
+    #hero{
+        margin-top: 50px;
+        color: #fff;
+    }
+
+    #hero h4{
+        margin-top: 40px;
+        font-size: 27px;
+    }
+    
+    #hero h1{
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 80px;
+        margin-bottom: 30px;
+        line-height: 100px;
+    }
+    
+    
+    /* SECCION EXPERIENCIA */
+
+    #experiencia .cont1::after,
+    #experiencia .cont1::before,
+    #experiencia .cont2::after,
+    #experiencia .cont2::before,
+    #experiencia .cont3::after,
+    #experiencia .cont3::before,
+    #experiencia .cont4::after,
+    #experiencia .cont4::before,
+    #experiencia .linea-figura {
+        display: none;
+    }
+
+    #experiencia .cont1,
+    #experiencia .cont2,
+    #experiencia .cont3,
+    #experiencia .cont4 {
+        position: inherit;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    #experiencia h2{
+        margin-bottom: 40px;
+    }
+}
+
+
+
+/* VERSION MOVIL */
+
+@media screen and (max-width: 600px) {
+    
+    /* HEADER */
+    #hero{
+        margin-top: 130px;
+        color: #fff;
+    }
+
+    #hero h4{
+        margin-top: 40px;
+        font-size: 27px;
+    }
+    #hero h1{
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 90px;
+        margin-bottom: 30px;
+        line-height: 100px;
+    }
+
+
+    /* SECCION CONOCIEMIENTOS / SKILLS */
+    #skills .cont-card{
+        margin: 50px auto;
+    }
+
+
+
+    /* SECCION HOBBIES */
+
+    #hobbies h2::before,
+    #hobbies h2::after {
+        display: none;
+    }
+
+
+    #hobbies .cont{
+        margin-top: 150px;
+    }
+
+    /* SECCION EXPERIENCIA */
+
+    #experiencia .cont1::after,
+    #experiencia .cont1::before,
+    #experiencia .cont2::after,
+    #experiencia .cont2::before,
+    #experiencia .cont3::after,
+    #experiencia .cont3::before,
+    #experiencia .cont4::after,
+    #experiencia .cont4::before,
+    #experiencia .linea-figura {
+        display: none;
+    }
+
+    #experiencia .cont1,
+    #experiencia .cont2,
+    #experiencia .cont3,
+    #experiencia .cont4 {
+        position: inherit;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    #experiencia h2{
+        margin-bottom: 40px;
+    }
+
+    /* SECCION PROYECTOS */
+    #proyectos .linea{
+        display: none;
+    }
+}
