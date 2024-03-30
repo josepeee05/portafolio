@@ -609,6 +609,11 @@ main{
     background: linear-gradient(to right, #FF7A00, #FF0000);
     border-radius: 40px;
     font-weight: 600;
+    transition: .5s;
+}
+
+#enlaces-contacto .mensaje:hover{
+    transform: scale(1.1);
 }
 
 
